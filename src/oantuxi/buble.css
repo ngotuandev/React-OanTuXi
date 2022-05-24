@@ -1,0 +1,175 @@
+@font-face {
+	font-family: game;
+	src: url(../../public/video_23_game_oan_tu_ti/Pony.ttf);
+}
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+.speech-bubble {
+	position: relative;
+	background: #fff;
+	border-radius: .4em;
+	border: 4px solid #45D994;
+	height: 150px;
+	width: 200px;
+	left: 10%;
+	
+}
+
+.speech-bubble:after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	width: 0;
+	height: 0;
+	border: 35px solid transparent;
+	border-top-color: #45D994;
+	border-bottom: 0;
+	border-left: 0;
+	margin-left: -17.5px;
+	margin-bottom: -35px;
+}
+
+.bg_game{
+	background-image :url(../../public//video_23_game_oan_tu_ti/bgGame.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+	background-position: center;
+	height: 1080px;
+	font-family: game;
+	
+}
+
+.game-row{
+	padding-top: 60px;
+}
+
+.text-success-cus{
+	color: #45D994;
+	font-size: 40px;
+}
+h3{
+	padding-top: 70px;
+	padding-bottom: 10px;
+}
+
+.btn-cus{
+	background: #fff;
+	outline: none !important;
+}
+.btn {
+	font-size: 1.3rem !important;
+}
+
+@media (max-width:991px) {
+	.container{
+		max-width: 800px;
+	}
+
+	.speech-bubble{
+		height: 130px;
+		width: 160px;
+	}
+
+	.speech-bubble img{
+		width: 85px;
+		height: 85px;
+	}
+
+	.col-6 h1{
+		font-size: 2.2rem ;
+	}
+
+	.col-6 .text-success-cus{
+		font-size: 35px;
+	}
+	.col-6 .btn{
+		font-size: 2.5rem !important;
+	}
+}
+
+@media (max-width:767px) {
+	
+
+	.speech-bubble{
+		height: 100px!important;
+		width: 140px!important;
+	}
+
+	.speech-bubble img{
+		width: 70px;
+		height: 70px;
+	}
+
+	.speech-bubble~img{
+		width: 140px !important;
+	}
+	
+	.col-6 h1{
+		font-size: 1.8rem;
+	}
+	.col-6 .text-success-cus{
+		font-size: 30px;
+	}
+	
+	.bg_game{
+		height: 1024px;
+	}
+	
+}
+
+@media (max-width:524px) {
+
+	.bg_game{
+		height: 950px;
+	}
+
+	.speech-bubble{
+		height: 70px !important;
+		width: 95px!important;
+	}
+
+	.speech-bubble:after{
+		bottom: 11px;
+		left: 60%;
+		border: 20px solid transparent;
+		border-top-color: #45D994;
+   	 	border-bottom: 0;
+    	border-left: 0;
+	}
+
+	.speech-bubble~img{
+		width: 110px !important;
+	}
+
+	.speech-bubble img{
+		width: 40px;
+		height: 40px;
+	}
+
+	.col-6 h1{
+		font-size: 1.2rem;
+	}
+
+	h3{
+		padding-top: 20px;
+	}
+
+	.col-6 .text-success-cus{
+		font-size: 20px;
+	}
+
+	.col-6 .btn{
+		font-size: 1.5rem !important;
+	}
+	
+	.btn-cus img{
+		width: 33px;
+		height: 33px;
+	}
+}
