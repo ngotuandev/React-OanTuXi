@@ -36,11 +36,13 @@
 }
 
 .bg_game{
+	position: fixed;
 	background-image :url(../../public//video_23_game_oan_tu_ti/bgGame.png);
     background-size: cover;
     background-repeat: no-repeat;
 	background-position: center;
-	height: 1080px;
+	width: 100%;
+	height: 100%;
 	font-family: game;
 	
 }
@@ -117,17 +119,9 @@ h3{
 		font-size: 30px;
 	}
 	
-	.bg_game{
-		height: 1024px;
-	}
-	
 }
 
 @media (max-width:524px) {
-
-	.bg_game{
-		height: 950px;
-	}
 
 	.speech-bubble{
 		height: 70px !important;
